@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfilUserActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilimguser"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/profilusernameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TXT_profil"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profilimguser"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/txt_gotomodifierprofil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TXT_modifierprofil"
+        android:textColor="@color/gray"
+        android:onClick="TxtGoToUpdateProfil"
+        android:textStyle="normal"
+        android:drawableStart="@drawable/ic_update"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profilusernameuser"
+        android:layout_marginTop="5dp"
+        app:drawableLeftCompat="@drawable/ic_update" />
+
+
+    <ImageView
+        android:id="@+id/coverprofiluser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/designofprofil"
+        android:layout_below="@+id/txt_gotomodifierprofil"
+        android:layout_marginTop="-10dp"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/llay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/coverprofiluser"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginStart="70dp"
+            android:contentDescription="TODO" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_fullname"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <TextView
+                android:id="@+id/id_usernameprofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/txt_fullname"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llay1"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_email"
+            android:layout_marginLeft="70dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_email"
+                android:textSize="16dp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <TextView
+                android:id="@+id/id_emailprofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/txt_email"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llay2"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_phone"
+            android:layout_marginStart="70dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_phone"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <TextView
+                android:id="@+id/id_phoneprofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/txt_phone"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1D2D2D2D"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:onClick="Returntodashboard"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_return"
+            android:contentDescription="@string/ffffff" />
+
+            <TextView
+                android:id="@+id/textviewlogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_goback"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

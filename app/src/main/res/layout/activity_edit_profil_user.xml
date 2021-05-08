@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditProfil_user">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileditimguser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileditinguserchange"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:onClick="ChangePhotoProfil"
+        android:layout_toLeftOf="@id/profileditimguser"
+        android:src="@drawable/ic_camera" />
+
+    <EditText
+        android:id="@+id/profilusernameedituser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileditimguser"
+        android:layout_marginTop="3dp"/>
+    <TextView
+        android:id="@+id/txt_gotoprofil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_goback"
+        android:textColor="@color/gray"
+        android:onClick="TxtGoBackToProfil"
+        android:textStyle="normal"
+        android:drawableStart="@drawable/ic_return"
+        android:drawablePadding="5dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profilusernameedituser"
+        android:layout_marginTop="5dp"
+        app:drawableLeftCompat="@drawable/ic_update" />
+
+
+    <ImageView
+        android:id="@+id/coverprofiluser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/designofprofil"
+        android:layout_below="@+id/txt_gotoprofil"
+        android:layout_marginTop="-10dp"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/llay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/coverprofiluser"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginStart="70dp"
+            android:contentDescription="TODO" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_fullname"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <EditText
+                android:id="@+id/id_usernameeditprofil"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llay1"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_email"
+            android:layout_marginLeft="70dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_email"
+                android:textSize="16dp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <EditText
+                android:id="@+id/id_emaileditprofil"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llay2"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_phone"
+            android:layout_marginStart="70dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_phone"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <EditText
+                android:id="@+id/id_phoneeditprofil"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llay55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llay3"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_lock_outline_black_24dp"
+            android:layout_marginStart="70dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textviewpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_passinscri"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-5dp" />
+
+            <EditText
+                android:id="@+id/id_passeditprofil"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1D2D2D2D"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:onClick="ConfirmEditProfil"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_confirm"
+            android:contentDescription="@string/ffffff" />
+
+        <TextView
+            android:id="@+id/textviewlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_confirm"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

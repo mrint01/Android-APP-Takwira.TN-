@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/id_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableStart="@drawable/ic_fullname"
+            android:drawableLeft="@drawable/ic_fullname"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/txt_fullname"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lay1" >
+
+        <EditText
+            android:id="@+id/id_emailinscri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableStart="@drawable/ic_email"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/txt_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lay2" >
+        <EditText
+            android:id="@+id/id_phoneinscri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/txt_phone"
+            android:inputType="phone"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lay3" >
+        <EditText
+            android:id="@+id/id_userinscri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableStart="@drawable/ic_user"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/txt_userinscri"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lay4" >
+        <EditText
+            android:id="@+id/id_passinscri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableStart="@drawable/ic_pass"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/txt_passinscri"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lay5" >
+
+        <RadioGroup
+            android:id="@+id/id_grpradio"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_weight="0.13">
+            <RadioButton
+                android:id="@+id/id_radioPersonnel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorwhite"
+                android:text="@string/txt_cmpt_personnel"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/id_radioProfessionnel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorwhite"
+                android:text="@string/txt_cmpt_professionnel"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lay6" >
+
+        <Button
+            android:id="@+id/id_btninscri"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_inscri"
+            android:onClick="BtnInscriAction"
+            android:text="@string/txt_btn_inscri"
+            android:textColor="@color/colorwhite"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lay7" >
+
+        <TextView
+            android:id="@+id/txt_loginreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="TxtReturnToLoginAction"
+            android:text="@string/txt_identifier"
+            android:textColor="?attr/colorError"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lay8" >
+
+        <TextView
+            android:id="@+id/id_txt_copyright2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/copyright"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="74dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="283dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="402dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

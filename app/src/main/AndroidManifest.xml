@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.takwiratn">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".History_orderUser"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Finish_OrderUser"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Card_Info_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Details_orderInfo_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Info_StadeReservation_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".List_StadiumUserActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Stadium_UserActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>
+
+        <activity
+            android:name=".SplachActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditProfil_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard_userActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".InscriActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPassword_user"
+            android:screenOrientation="portrait" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

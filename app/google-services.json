@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "818644272427",
+    "project_id": "takwiratn-cae6c",
+    "storage_bucket": "takwiratn-cae6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818644272427:android:3e2016e29ea33d093db16e",
+        "android_client_info": {
+          "package_name": "com.example.takwiratn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818644272427-3jv8p4mn02s1qjbh5ddb9j7ajvrnra2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCetZvFvMwkNClUANk5n_5_sVNytXBOlXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818644272427-3jv8p4mn02s1qjbh5ddb9j7ajvrnra2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

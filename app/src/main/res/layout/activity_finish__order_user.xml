@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Finish_OrderUser">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_shopdone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_mercipr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/merci_pour_votre_r_servation"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lay1"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txt_mercipr"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:onClick="BtnGoToHistoryVerif"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btnBuy"
+            android:background="@color/colorPrimary"
+            android:text="@string/v_rifier_ma_r_servation"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
